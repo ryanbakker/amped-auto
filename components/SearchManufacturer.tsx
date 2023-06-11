@@ -55,7 +55,7 @@ const SearchManufacturer = ({
                   key={item}
                   className={({ active }) => `
                     relative search-manufacturer__option ${
-                      active ? "bg-primary-blue text-white" : "text-gray-600"
+                      active ? "bg-primary-purple text-white" : "text-gray-600"
                     }
                     `}
                   value={item}

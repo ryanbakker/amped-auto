@@ -30,7 +30,7 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
   const ageRate = (new Date().getFullYear() - year) * ageFactor;
 
   // Calculate total rental rate per day
-  const rentalRatePerDay = basePricePerDay + mileageRate + ageRate;
+  const rentalRatePerDay = (basePricePerDay + mileageRate + ageRate) / 2;
 
   const rentalRatePerDayWithZero = rentalRatePerDay.toFixed(0).padEnd(3, "0");
 
